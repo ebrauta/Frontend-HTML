@@ -2,6 +2,7 @@
 :root{
     --vermelho:#E50914;
     --preta:#141414;
+    --branca: #fff;
 }
 
 *{
@@ -13,8 +14,8 @@
 /*elementos base*/
 body{
    background: var(--preta); /*uso da variável*/
-   font-family: 'Arial', Times, serif;
-   color:white;
+   font-family: 'Roboto', sans-serif; 
+   color:var(--branca);
 }
 
 
@@ -22,37 +23,65 @@ header .container{
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: flex-start;
+    font-weight: 100;
+    font-size: 14px;
 }
 
 header .logo{
     margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size:40px;
+    padding: 13px 15px 0 18px;
 }
 
 header nav a{
     text-decoration:none;
-    color:#AAA;
+    color:var(--branca);
     margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
 
 header nav a:hover{
     color:#fff;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 15px 5px 5px 15px;
+    margin-right: 0;
+    background: rgba(0,0,0,0);
+}
+header nav .inicial{
+    font-weight: 800;
+}
+
+.rigth_nav{
+    width: 500px;
+}
+.img_link{
+    font-size: 18px;
+    padding-right: 5px;
+}
+.button {
+    width: 60px;
+    height: 32px;
+    line-height: 32px;
+}
+.img_link img{
+    width: 32px;
+    border-radius: 2px;
+    padding-left: 5px;
 }
 
 /*filme principal*/
 .filme-principal{
     font-size:16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/images/netflix/capa-house.jpg');
-
     height:400px;
     background-size:cover;
- 
-
     display: flex;
     flex-direction: column;
     justify-content: center;
