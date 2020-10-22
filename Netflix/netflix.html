@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/netflix.css" />
+    <title>Netflix</title>
+    <!-- responsividade -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- owl css -> carrossel -->
+    <link rel="stylesheet" href="./css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css" />
+    <!-- fonts externas -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="principal">
+        <header>
+          <div>
+              <h2 class="logo-inicial">
+                <img src="./images/logo.png" alt="Netflix" />
+              </h2>
+          </div>
+        </header>
+        <div class="main">
+            <h1 class="entrar">Entrar</h1>
+            <div class="profile-in">
+                <div class="user">    
+                    <input class="text-user" type="text" required />
+                    <label class="lbl-user" for="text-user">Email ou número do telefone</label>
+                </div>
+                <div class="pass">
+                    <input type="text" class="text-pass" required />
+                    <label class="lbl-pass" for="text-pass" >Senha</label>
+                </div>
+            </div>
+            <a href="netflix-logado.html" class="nextflix-enter-login">Entrar</a>
+            <div class="remember">
+                <div class="check">
+                    <input type="checkbox" name="lembrar" id="lembrar" value='checked'>Lembre-se de mim
+                </div>
+                <span>Precisa de ajuda?</span>
+            </div>
+            <p class="facebook-text"><span class="img-facebook"></span> Conectar com o Facebook</p>
+            <p class="new-text"> Novo por aqui? <a href="#" class="assine">Assine agora.</a></p>
+            <p class="captcha"> Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" class="saiba">Saiba mais.</a></p>
+        </div>
+        <footer>
+            <div class="footer-conteudo">
+                <p class="duvidas">Dúvida Ligue 0800-761-4631</p>
+                <ul class="colunas">
+                    <li class='colunas-item'>Perguntas frequentes</li>
+                    <li class='colunas-item'>Centro de ajuda</li>
+                    <li class='colunas-item'>Termos de uso</li>
+                    <li class='colunas-item'>Privacidade</li>
+                    <li class='colunas-item'>Preferências de cookies</li>
+                    <li class='colunas-item'>Informações corporativas</li>
+                </ul>
+                <select name="lingua" class="lingua">
+                   <option value="port">  Português</option>
+                    <option value="engl"> Inglês</option>
+                </select>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <!-- scripts owl e jquery  -> carrossel -->
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/owl/setup.js"></script>
+  </body>
+</html>
